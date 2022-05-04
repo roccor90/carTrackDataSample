@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+    <span>Real time car track data</span>
+</mat-toolbar>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <mat-selection-list #mainmenu [multiple]="false">
+            <mat-list-option [routerLink]="['/']">
+              <mat-icon mat-list-icon>home</mat-icon>
+              <div mat-line>Home page</div>
+            </mat-list-option >
+        </mat-selection-list>
+
+    </mat-drawer>
+    <mat-drawer-content><div class="maincontent_container"><router-outlet></router-outlet></div></mat-drawer-content>
+</mat-drawer-container>

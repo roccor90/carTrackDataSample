@@ -1,0 +1,49 @@
+<p>
+    <mat-toolbar color="accent">
+        <h1>Lista elementi</h1>
+    </mat-toolbar>
+</p>
+
+
+<mat-accordion class="example-headers-align">
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Volvo V40
+        </mat-panel-title>
+        <mat-panel-description>
+            Click to expand for real track data
+          <mat-icon>directions_car</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <app-track-data [cardId]="'Volvo V40'"></app-track-data>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel  hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Audi A6
+          </mat-panel-title>
+          <mat-panel-description>
+            Click to expand for real track data
+            <mat-icon>directions_car</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-track-data [cardId]="'Audi A6'"></app-track-data>
+    </mat-expansion-panel>
+
+
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Porsche 911
+          </mat-panel-title>
+          <mat-panel-description>
+            Click to expand for real track data
+            <mat-icon>directions_car</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <app-track-data [cardId]="'Porsche 911'"></app-track-data>
+    </mat-expansion-panel>
+</mat-accordion>
